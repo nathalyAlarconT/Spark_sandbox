@@ -1,0 +1,9 @@
+version: '2'
+services:
+  miniconda:
+    image: almondsh/almond:latest
+    container_name: scala_notebook
+    ports:
+      - "8899:8888"
+    volumes:
+      - ./notebooksAnaconda:/home/jovyan/work
